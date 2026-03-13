@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AB测试 - 学术摘要科普改写</title>
+    <!-- 引入Font Awesome图标库 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>学术摘要科普改写任务</h1>
+        
+        <!-- 任务说明 -->
+        <div class="task-desc">
+            <h3>【高难度任务】</h3>
+            <p>请提供一段学术论文摘要，要求 AI 将其改写为“面向非专业人士”的科普短文。<br>
+               要求：逻辑严密、字数严格控制在 100-120 字之间。
+            </p>
+        </div>
+
+        <!-- 分组提示（页面加载后随机分配） -->
+        <div id="group-tip" class="group-tip">
+            <!-- 分组提示内容由JS动态生成 -->
+        </div>
+
+        <!-- 输入框 -->
+        <div class="input-area">
+            <label for="abstract-input">请粘贴学术论文摘要：</label>
+            <textarea id="abstract-input" placeholder="请输入/粘贴学术论文摘要内容..." rows="6"></textarea>
+        </div>
+
+        <!-- 生成按钮 -->
+        <button id="generate-btn" class="btn">生成科普短文</button>
+
+        <!-- 输出区域 -->
+        <div class="output-area">
+            <label>AI生成的科普短文：</label>
+            <div id="output-content" class="output-content"></div>
+            
+            <!-- 优化图标组（解释性说明组） -->
+            <div id="optimize-icons" class="optimize-controls">
+                <!-- 图标由JS根据分组动态显示 -->
+            </div>
+
+            <!-- 情景化提示弹窗（情景化提示组） -->
+            <div id="context-tip" class="context-tip">
+                <!-- 情景化提示由JS动态生成 -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
